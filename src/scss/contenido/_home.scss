@@ -1,0 +1,41 @@
+.home {
+    height: auto;
+    //clip-path: ellipse(294% 100% at 196.4% 0%);
+    .caja {
+        padding: calc( 10rem - 5rem) 0;
+        @include telefono {
+            @include grid (1, $separacion);
+        }
+        @include tablet {
+            @include grid (2, $separacion);
+        }
+        .box2 {
+            display: flex;
+            align-items: center;
+
+            h1 {
+                text-align: center;
+                font-family: $fuentePrincipal;
+                font-weight: $bold;
+                color: $white;
+            }
+        }
+    }
+
+    .scrolldown {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        h4 a{
+            text-align: center;
+            font-family: $fuentePrincipal;
+            font-weight: $bold;
+            color: $white;
+        }
+        ion-icon {
+            font-size: 4rem;
+            color: $white;
+        }
+    }
+}

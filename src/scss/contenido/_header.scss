@@ -1,0 +1,78 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+
+    &.fijo {
+        position: fixed;
+        width: 100%;
+        box-shadow: 0 .3rem 3rem #444;
+    }
+    
+    .contenido-header{
+        padding: calc( 5rem - 3rem) 0;
+
+        @include telefono_max {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            h3 {
+                padding: 0 calc( 5rem - 3rem);
+                color: $white;
+                margin-bottom: 1rem;
+                text-align: left;
+                font-size: 2.5rem;
+                span {
+                    font-weight: $delgada;
+                }
+            }
+        }
+        @include tablet {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            h3 {
+                color: $white;
+                margin-bottom: 1rem;
+                text-align: center;
+                @include tablet {
+                    margin-bottom: 0;
+                }
+                span {
+                    font-weight: $delgada;
+                }
+            }
+        }
+    }
+
+    .navegacion-principal {
+        @include tablet {
+            .nav-link{
+                display: flex;
+                gap: 2rem;
+                justify-content: center;
+            }
+            
+            
+            a {
+                color: $white;
+                font-size: 2rem;
+        
+                &:hover {
+                    color: $green_white;
+                }
+            }
+        }
+    
+        @include telefono_max {
+            display: none;
+        } 
+    }
+    
+}
+
+
+

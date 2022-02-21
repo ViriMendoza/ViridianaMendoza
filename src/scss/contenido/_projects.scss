@@ -1,0 +1,106 @@
+.projects {
+    height: auto;
+    padding: calc( 10rem - 5rem) 0;
+
+    h2 {
+        font-family: $fuentePrincipal;
+        font-weight: $regular;
+        text-align: center;
+        span {
+            padding-bottom: .5rem;
+            display: inline-block;
+            border-bottom: .2rem solid $negro;
+        }
+    }
+    h3 {
+        font-family: $fuentePrincipal;
+        font-weight: $regular;
+        text-align: center;
+    }
+    h4 {
+        font-family: $fuentePrincipal;
+        font-weight: $regular;
+        text-align: center;
+    }
+
+    .responsive {
+        padding: calc( 5rem - 3rem) 0;
+        border: 1px solid #ccc;
+        @include telefono {
+            @include grid (1, $separacion);
+
+            img {
+                width:400; 
+                height:200;              
+            }
+            .gallery {
+                padding: calc( 10rem - 5rem) 0;
+            }
+            .desc {
+                background-color: $green_white;
+                text-align: center;
+                padding: calc( 5rem - 3rem) 0;
+                h5 {
+                    font-family: $fuentePrincipal;
+                    font-weight: $bold;
+                    text-align: center;
+
+                    span {
+                        padding-bottom: .5rem;
+                        display: inline-block;
+                        border-bottom: .2rem solid $negro;
+                    }
+                    ion-icon {
+                        font-size: 2rem;
+                        color: $negro;
+                    }
+                }
+                ion-icon {
+                    font-size: 5rem;
+                    color: $green;
+                }
+                
+            }
+        }
+
+        @include telefono_max {
+            @include grid (1, $separacion);
+
+            img {
+                width:400; 
+                height:200;              
+            }
+            .gallery {
+                padding: calc( 10rem - 5rem) 0;
+            }
+            .desc {
+                background-color: $green_white;
+                text-align: center;
+                padding: calc( 5rem - 3rem) 0;
+                h5 {
+                    font-family: $fuentePrincipal;
+                    font-weight: $bold;
+                    text-align: center;
+
+                    span {
+                        padding-bottom: .5rem;
+                        display: inline-block;
+                        border-bottom: .2rem solid $negro;
+                    }
+                    ion-icon {
+                        font-size: 1rem;
+                        color: $negro;
+                    }
+                }
+                ion-icon {
+                    font-size: 3rem;
+                    color: $green;
+                }
+                
+            }
+        }
+        
+
+        
+    }
+}

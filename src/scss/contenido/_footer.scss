@@ -1,0 +1,27 @@
+.footer {
+    background-color: $green;
+    height: auto;
+    padding: calc( 5rem - 2rem) 0;
+    .main-logo {
+        display: flex;
+        justify-content: center;
+        
+        
+        h3 {
+            color: $white;
+            text-align: left;
+            font-size: 2.5rem;
+        }
+        
+        span {
+            font-weight: $delgada;
+        }
+    }
+    h5 {
+        font-family: $fuentePrincipal;
+        color: $negro;
+        margin-bottom: 0;
+        display: flex;
+        justify-content: center;
+    }
+}

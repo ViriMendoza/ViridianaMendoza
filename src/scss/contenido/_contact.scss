@@ -1,0 +1,142 @@
+.contact {
+    height: auto;
+    padding: calc( 10rem - 5rem) 0;
+
+    @include telefono_max {
+        height: 80rem;
+    }
+    h3 {
+        font-family: $fuentePrincipal;
+        font-weight: $regular;
+        text-align: center;
+        span {
+            padding-bottom: .5rem;
+            display: inline-block;
+            border-bottom: .2rem solid $negro;
+        }
+    }
+
+    .grid {
+        padding: calc( 10rem - 5rem) 0;
+        @include telefono {
+            @include grid (1, $separacion);
+        }
+        @include tablet {
+            @include grid (2, $separacion);
+        }
+
+        .lista_about2 {
+            list-style-type: none;
+
+            .list {
+                padding: calc( 5rem - 3rem) 0;
+            }
+        }
+
+        .contact2 {
+
+            .inputs {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                
+            }
+        
+                #contact-form{ width:100%; float:left; margin:2rem 0;}
+                @include telefono {
+                    #contact-form input[type="text"]{ 
+                        width:80%; 
+                        height:4rem; 
+                        margin:0; 
+                        margin-bottom:1.5rem; 
+                        padding:0 1rem; 
+                        color: $negro;
+                        background: $white; /* Old browsers */
+                        border: $negro .2rem solid;
+                        border-radius: .25rem;
+                    }
+                    #contact-form input[type="email"]{ 
+                        width:80%; 
+                        height:4rem; 
+                        margin:0; 
+                        margin-bottom:1.5rem; 
+                        padding:0 1rem; 
+                        color: $negro;
+                        background: $white;
+                        border: $negro .2rem solid;
+                        border-radius: .25rem;
+                    }	
+    
+                    #contact-form textarea{
+                        width:80%; 
+                        height:10rem;  
+                        margin-bottom: 1.5rem;
+                        padding:0 1rem; 
+                        color: $negro;
+                        background: $white;
+                        border: $negro .2rem solid;
+                        border-radius: .25rem;
+                        resize: none;
+                    }
+    
+                    #contact-form input[type="submit"]{ 
+                        color: $negro; 
+                        padding:1rem 2rem; 
+                        font-size:1.5rem; 
+                        font-weight:$bold; 
+                        background: $white;
+                        border: $negro 2px solid;
+                        border-radius: .25rem;
+                    }
+                }
+                @include telefono_max {
+                    #contact-form input[type="text"]{ 
+                        width:80%; 
+                        height:4rem; 
+                        margin:0; 
+                        margin-bottom:1rem; 
+                        padding:0 1rem; 
+                        color: $negro;
+                        background: $white; /* Old browsers */
+                        border: $negro .2rem solid;
+                        border-radius: .25rem;
+                    }
+                    #contact-form input[type="email"]{ 
+                        width:80%; 
+                        height:4rem; 
+                        margin:0; 
+                        margin-bottom:1rem; 
+                        padding:0 1rem; 
+                        color: $negro;
+                        background: $white;
+                        border: $negro .2rem solid;
+                        border-radius: .25rem;
+                    }	
+    
+                    #contact-form textarea{
+                        width:80%; 
+                        height:10rem;  
+                        margin-bottom: 1rem;
+                        padding:0 1rem; 
+                        color: $negro;
+                        background: $white;
+                        border: $negro .2rem solid;
+                        border-radius: .25rem;
+                        resize: none;
+                    }
+    
+                    #contact-form input[type="submit"]{ 
+                        color: $negro; 
+                        padding:1rem 2rem; 
+                        font-size:1.5rem; 
+                        font-weight:$bold; 
+                        background: $white;
+                        border: $negro 2px solid;
+                        border-radius: .25rem;
+                    }
+            }
+        }
+        
+    }
+    
+}

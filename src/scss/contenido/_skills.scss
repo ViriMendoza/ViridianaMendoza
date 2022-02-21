@@ -1,0 +1,49 @@
+.skills {
+    height: auto;
+    padding: calc( 10rem - 5rem) 0;
+
+    h2 {
+        font-family: $fuentePrincipal;
+        font-weight: $regular;
+        text-align: center;
+        span {
+            padding-bottom: .5rem;
+            display: inline-block;
+            border-bottom: .2rem solid $negro;
+        }
+    }
+    .grid {
+        @include telefono {
+            @include grid (2, $separacion);
+            gap: 0;
+        }
+        @include telefono_max {
+            @include grid (1, $separacion);
+            gap: 0;
+        }
+        .list_skills {
+            padding: calc( 10rem - 5rem) 0;
+            display: inline-flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            .skill1 {
+                width: 30%;
+                height: 20%;
+                margin:0; 
+                margin-bottom:1.5rem; 
+                margin-right: 2rem;
+                color: $green;
+                background: $white;
+                border: $negro .1rem solid;
+                border-radius: .25rem;
+                &:hover {
+                    background-color: $green;
+                    color: $white;
+                }
+            }
+            
+        }
+
+    }
+}

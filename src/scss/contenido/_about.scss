@@ -1,0 +1,107 @@
+
+.about {
+    background-color: $white;
+    height: auto;
+    span {
+        padding-bottom: .5rem;
+        display: inline-block;
+        border-bottom: .2rem solid $negro;
+    }
+
+    .aboutme_text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: calc( 10rem - 5rem) 0;
+
+        span {
+            padding-bottom: .5rem;
+            display: inline-block;
+            border-bottom: .2rem solid $negro;
+        }
+        h2 {
+            font-family: $fuentePrincipal;
+            font-weight: $regular;
+            text-align: center;
+        }
+        .line_text {
+            z-index: 1; 
+            position: absolute;
+            float: right; 
+            top:68rem; 
+            right:27rem;
+        }
+        
+    }
+    .aboutbox {
+        span {
+            padding-bottom: .5rem;
+            display: inline-block;
+            border-bottom: .2rem solid $negro;
+        }
+        @include telefono {
+            @include grid (1, $separacion);
+        }
+        @include tablet {
+            @include grid (2, $separacion);
+        }
+
+        .about1{
+            padding: $separacion;
+            
+            .img_about img{
+                width: 30rem;
+                height: 40rem;
+                border-radius: 50%;
+            }
+            @include telefono_max {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 0;
+                .img_about img{
+                    width: 15rem;
+                    height: 20rem;
+                    border-radius: 50%;
+                }
+            }
+            
+        }
+
+        .about2 {
+            background-color: $white;
+            padding: $separacion;
+            h1 {
+                font-family: $fuentePrincipal;
+                font-weight: $delgada;
+                text-align: center;
+            }
+
+            .centrar_botones {
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                padding: calc( 5rem - 3rem) 0;
+            }
+            button, .boton_descargar {
+                background-color: $green;
+                color: $white;
+                font-size: 1.5rem;
+                font-weight: $bold;
+                border: 0;
+                padding: 1.5rem;
+            }
+        }
+    }
+
+    h4 {
+        text-align: center;
+        font-family: $fuentePrincipal;
+        font-weight: $bold;
+    }
+    h3 {
+        text-align: center;
+        font-family: $fuentePrincipal;
+        font-weight: $regular;
+    }
+}
