@@ -21,23 +21,34 @@
         font-family: $fuentePrincipal;
         font-weight: $regular;
         text-align: center;
+        @include telefono_max {
+            font-size: 1.5rem;
+        }
     }
 
     .responsive {
         padding: calc( 5rem - 3rem) 0;
-        border: 1px solid #ccc;
+        display: flex;
+            justify-content: center;
         @include telefono {
-            @include grid (1, $separacion);
-
+            @include grid (2, $separacion);
+            place-content: center;
+            width: 80%;
+            margin: auto auto;
+            
             img {
                 width:400; 
                 height:200;              
             }
             .gallery {
-                padding: calc( 10rem - 5rem) 0;
+                padding: calc( 5rem - 3rem) 1rem;
+                border-radius: .5rem;
+                background-color: $green_white;
+                box-shadow: 0 .3rem 2rem #444;
             }
             .desc {
                 background-color: $green_white;
+                border-radius: .5rem;
                 text-align: center;
                 padding: calc( 5rem - 3rem) 0;
                 h5 {
@@ -65,18 +76,21 @@
 
         @include telefono_max {
             @include grid (1, $separacion);
-
+            padding: 0 calc( 10rem - 5rem);
+            
             img {
-                width:400; 
-                height:200;              
+                width:30rem; 
+                height:15rem;              
             }
             .gallery {
-                padding: calc( 10rem - 5rem) 0;
+                padding: calc( 5rem - 3rem) 1rem;
+                border-radius: .5rem;
+                background-color: $green_white;
+                box-shadow: 0 .3rem 3rem #444;
             }
             .desc {
                 background-color: $green_white;
                 text-align: center;
-                padding: calc( 5rem - 3rem) 0;
                 h5 {
                     font-family: $fuentePrincipal;
                     font-weight: $bold;

@@ -28,7 +28,7 @@
             align-items: center;
             justify-content: center;
             .skill1 {
-                width: 30%;
+                width: 35%;
                 height: 20%;
                 margin:0; 
                 margin-bottom:1.5rem; 
@@ -37,6 +37,7 @@
                 background: $white;
                 border: $negro .1rem solid;
                 border-radius: .25rem;
+                box-shadow: 0 .3rem 2rem #444;
                 &:hover {
                     background-color: $green;
                     color: $white;

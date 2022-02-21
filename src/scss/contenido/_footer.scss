@@ -17,10 +17,32 @@
             font-weight: $delgada;
         }
     }
+
+    .menu-footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        
+        .nav-link {
+            padding: calc( 5rem - 4rem) 0;
+            a {
+                color: $white;
+                padding: calc( 5rem - 2rem) .25rem;
+                &:hover {
+                    color: $green_white;
+                }
+            }
+        }
+        
+    }
     h5 {
         font-family: $fuentePrincipal;
+        font-weight: $delgada;
         color: $negro;
+        text-align: center;
         margin-bottom: 0;
+        padding-bottom: 0;
         display: flex;
         justify-content: center;
     }

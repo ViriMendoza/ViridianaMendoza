@@ -3,7 +3,7 @@
     padding: calc( 10rem - 5rem) 0;
 
     @include telefono_max {
-        height: 80rem;
+        height: 90rem;
     }
     h3 {
         font-family: $fuentePrincipal;
@@ -30,11 +30,17 @@
 
             .list {
                 padding: calc( 5rem - 3rem) 0;
+                ion-icon {
+                    font-size: 2.5rem;
+                }
             }
         }
 
         .contact2 {
-
+            @include telefono {
+                padding: calc( 10rem - 5rem) 0;
+            }
+            
             .inputs {
                 display: flex;
                 align-items: center;
